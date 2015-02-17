@@ -21,125 +21,125 @@ Partial Public Class FormHora
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mainMenu1 = New System.Windows.Forms.MainMenu
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
+        Me.butHoraMas = New System.Windows.Forms.Button
+        Me.butMinMas = New System.Windows.Forms.Button
+        Me.butHoraMenos = New System.Windows.Forms.Button
+        Me.butMinMenos = New System.Windows.Forms.Button
+        Me.labTitHora = New System.Windows.Forms.Label
+        Me.labHora = New System.Windows.Forms.Label
+        Me.labTitMin = New System.Windows.Forms.Label
+        Me.labMin = New System.Windows.Forms.Label
+        Me.labPuntos = New System.Windows.Forms.Label
         Me.FormMsg_panel_botones = New System.Windows.Forms.Panel
-        Me.FormMsg_btn_cancelar = New System.Windows.Forms.Button
-        Me.FormMsg_btn_aceptar = New System.Windows.Forms.Button
+        Me.butCancelar = New System.Windows.Forms.Button
+        Me.butAceptar = New System.Windows.Forms.Button
         Me.FormMsg_panel_botones.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'butHoraMas
         '
-        Me.Button1.Font = New System.Drawing.Font("Tahoma", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.Button1.Location = New System.Drawing.Point(3, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 50)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "+"
+        Me.butHoraMas.Font = New System.Drawing.Font("Tahoma", 24.0!, System.Drawing.FontStyle.Bold)
+        Me.butHoraMas.Location = New System.Drawing.Point(3, 3)
+        Me.butHoraMas.Name = "butHoraMas"
+        Me.butHoraMas.Size = New System.Drawing.Size(110, 50)
+        Me.butHoraMas.TabIndex = 0
+        Me.butHoraMas.Text = "+"
         '
-        'Button2
+        'butMinMas
         '
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.Button2.Location = New System.Drawing.Point(127, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(110, 50)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "+"
+        Me.butMinMas.Font = New System.Drawing.Font("Tahoma", 24.0!, System.Drawing.FontStyle.Bold)
+        Me.butMinMas.Location = New System.Drawing.Point(127, 3)
+        Me.butMinMas.Name = "butMinMas"
+        Me.butMinMas.Size = New System.Drawing.Size(110, 50)
+        Me.butMinMas.TabIndex = 1
+        Me.butMinMas.Text = "+"
         '
-        'Button3
+        'butHoraMenos
         '
-        Me.Button3.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Button3.Location = New System.Drawing.Point(3, 157)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 50)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "-"
+        Me.butHoraMenos.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.butHoraMenos.Location = New System.Drawing.Point(3, 157)
+        Me.butHoraMenos.Name = "butHoraMenos"
+        Me.butHoraMenos.Size = New System.Drawing.Size(110, 50)
+        Me.butHoraMenos.TabIndex = 2
+        Me.butHoraMenos.Text = "-"
         '
-        'Button4
+        'butMinMenos
         '
-        Me.Button4.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Button4.Location = New System.Drawing.Point(127, 157)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(110, 50)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "-"
+        Me.butMinMenos.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.butMinMenos.Location = New System.Drawing.Point(127, 157)
+        Me.butMinMenos.Name = "butMinMenos"
+        Me.butMinMenos.Size = New System.Drawing.Size(110, 50)
+        Me.butMinMenos.TabIndex = 3
+        Me.butMinMenos.Text = "-"
         '
-        'Label1
+        'labTitHora
         '
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(0, 82)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 30)
-        Me.Label1.Text = "Horas:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.labTitHora.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.labTitHora.Location = New System.Drawing.Point(0, 82)
+        Me.labTitHora.Name = "labTitHora"
+        Me.labTitHora.Size = New System.Drawing.Size(110, 30)
+        Me.labTitHora.Text = "Horas:"
+        Me.labTitHora.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label2
+        'labHora
         '
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(3, 112)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 30)
-        Me.Label2.Text = "1"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.labHora.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.labHora.Location = New System.Drawing.Point(3, 112)
+        Me.labHora.Name = "labHora"
+        Me.labHora.Size = New System.Drawing.Size(110, 30)
+        Me.labHora.Text = "1"
+        Me.labHora.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label5
+        'labTitMin
         '
-        Me.Label5.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(127, 82)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(108, 30)
-        Me.Label5.Text = "Minutos:"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.labTitMin.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.labTitMin.Location = New System.Drawing.Point(127, 82)
+        Me.labTitMin.Name = "labTitMin"
+        Me.labTitMin.Size = New System.Drawing.Size(108, 30)
+        Me.labTitMin.Text = "Minutos:"
+        Me.labTitMin.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label3
+        'labMin
         '
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(127, 112)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 30)
-        Me.Label3.Text = "50"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.labMin.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.labMin.Location = New System.Drawing.Point(127, 112)
+        Me.labMin.Name = "labMin"
+        Me.labMin.Size = New System.Drawing.Size(108, 30)
+        Me.labMin.Text = "50"
+        Me.labMin.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label4
+        'labPuntos
         '
-        Me.Label4.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(111, 112)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(10, 30)
-        Me.Label4.Text = ":"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.labPuntos.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.labPuntos.Location = New System.Drawing.Point(111, 112)
+        Me.labPuntos.Name = "labPuntos"
+        Me.labPuntos.Size = New System.Drawing.Size(10, 30)
+        Me.labPuntos.Text = ":"
+        Me.labPuntos.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'FormMsg_panel_botones
         '
-        Me.FormMsg_panel_botones.Controls.Add(Me.FormMsg_btn_cancelar)
-        Me.FormMsg_panel_botones.Controls.Add(Me.FormMsg_btn_aceptar)
+        Me.FormMsg_panel_botones.Controls.Add(Me.butCancelar)
+        Me.FormMsg_panel_botones.Controls.Add(Me.butAceptar)
         Me.FormMsg_panel_botones.Location = New System.Drawing.Point(3, 223)
         Me.FormMsg_panel_botones.Name = "FormMsg_panel_botones"
         Me.FormMsg_panel_botones.Size = New System.Drawing.Size(234, 42)
         '
-        'FormMsg_btn_cancelar
+        'butCancelar
         '
-        Me.FormMsg_btn_cancelar.Location = New System.Drawing.Point(122, 4)
-        Me.FormMsg_btn_cancelar.Name = "FormMsg_btn_cancelar"
-        Me.FormMsg_btn_cancelar.Size = New System.Drawing.Size(109, 35)
-        Me.FormMsg_btn_cancelar.TabIndex = 1
-        Me.FormMsg_btn_cancelar.Text = "Cancelar"
+        Me.butCancelar.Location = New System.Drawing.Point(122, 4)
+        Me.butCancelar.Name = "butCancelar"
+        Me.butCancelar.Size = New System.Drawing.Size(109, 35)
+        Me.butCancelar.TabIndex = 1
+        Me.butCancelar.Text = "Cancelar"
         '
-        'FormMsg_btn_aceptar
+        'butAceptar
         '
-        Me.FormMsg_btn_aceptar.Location = New System.Drawing.Point(3, 4)
-        Me.FormMsg_btn_aceptar.Name = "FormMsg_btn_aceptar"
-        Me.FormMsg_btn_aceptar.Size = New System.Drawing.Size(113, 35)
-        Me.FormMsg_btn_aceptar.TabIndex = 0
-        Me.FormMsg_btn_aceptar.Text = "Aceptar"
+        Me.butAceptar.Location = New System.Drawing.Point(3, 4)
+        Me.butAceptar.Name = "butAceptar"
+        Me.butAceptar.Size = New System.Drawing.Size(113, 35)
+        Me.butAceptar.TabIndex = 0
+        Me.butAceptar.Text = "Aceptar"
         '
         'FormHora
         '
@@ -148,15 +148,15 @@ Partial Public Class FormHora
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(240, 268)
         Me.Controls.Add(Me.FormMsg_panel_botones)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.labPuntos)
+        Me.Controls.Add(Me.labMin)
+        Me.Controls.Add(Me.labTitMin)
+        Me.Controls.Add(Me.labHora)
+        Me.Controls.Add(Me.labTitHora)
+        Me.Controls.Add(Me.butMinMenos)
+        Me.Controls.Add(Me.butHoraMenos)
+        Me.Controls.Add(Me.butMinMas)
+        Me.Controls.Add(Me.butHoraMas)
         Me.Menu = Me.mainMenu1
         Me.Name = "FormHora"
         Me.Text = "FormHora"
@@ -164,16 +164,16 @@ Partial Public Class FormHora
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents butHoraMas As System.Windows.Forms.Button
+    Friend WithEvents butMinMas As System.Windows.Forms.Button
+    Friend WithEvents butHoraMenos As System.Windows.Forms.Button
+    Friend WithEvents butMinMenos As System.Windows.Forms.Button
+    Friend WithEvents labTitHora As System.Windows.Forms.Label
+    Friend WithEvents labHora As System.Windows.Forms.Label
+    Friend WithEvents labTitMin As System.Windows.Forms.Label
+    Friend WithEvents labMin As System.Windows.Forms.Label
+    Friend WithEvents labPuntos As System.Windows.Forms.Label
     Friend WithEvents FormMsg_panel_botones As System.Windows.Forms.Panel
-    Friend WithEvents FormMsg_btn_cancelar As System.Windows.Forms.Button
-    Friend WithEvents FormMsg_btn_aceptar As System.Windows.Forms.Button
+    Friend WithEvents butCancelar As System.Windows.Forms.Button
+    Friend WithEvents butAceptar As System.Windows.Forms.Button
 End Class

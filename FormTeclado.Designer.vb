@@ -39,6 +39,8 @@ Partial Public Class FormTeclado
         Me.but0 = New System.Windows.Forms.Button
         Me.butCancelar = New System.Windows.Forms.Button
         Me.butAceptar = New System.Windows.Forms.Button
+        Me.Timer1 = New System.Windows.Forms.Timer
+        Me.LabEstado = New System.Windows.Forms.Label
         Me.SuspendLayout()
         '
         'tbRes
@@ -180,12 +182,23 @@ Partial Public Class FormTeclado
         Me.butAceptar.TabIndex = 19
         Me.butAceptar.Text = "ACEPTAR"
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 750
+        '
+        'LabEstado
+        '
+        Me.LabEstado.Location = New System.Drawing.Point(189, 4)
+        Me.LabEstado.Name = "LabEstado"
+        Me.LabEstado.Size = New System.Drawing.Size(48, 20)
+        '
         'FormTeclado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(240, 268)
+        Me.Controls.Add(Me.LabEstado)
         Me.Controls.Add(Me.butAceptar)
         Me.Controls.Add(Me.butCancelar)
         Me.Controls.Add(Me.but0)
@@ -228,4 +241,6 @@ Partial Public Class FormTeclado
     Friend WithEvents but0 As System.Windows.Forms.Button
     Friend WithEvents butCancelar As System.Windows.Forms.Button
     Friend WithEvents butAceptar As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents LabEstado As System.Windows.Forms.Label
 End Class

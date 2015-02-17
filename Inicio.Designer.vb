@@ -29,6 +29,7 @@ Partial Public Class Inicio
         Me.Login_lbl_usuario = New System.Windows.Forms.Label
         Me.Login_btn_usuario = New System.Windows.Forms.Button
         Me.TabPage2 = New System.Windows.Forms.TabPage
+        Me.homa_LogOut = New System.Windows.Forms.Button
         Me.Home_mMultas = New System.Windows.Forms.Button
         Me.Home_mTickets = New System.Windows.Forms.Button
         Me.Home_nTicket = New System.Windows.Forms.Button
@@ -49,42 +50,41 @@ Partial Public Class Inicio
         Me.nTicket3_btn_matricula = New System.Windows.Forms.Button
         Me.nTicket3_lbl_plaza = New System.Windows.Forms.Label
         Me.nTicket3_btn_plaza = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.ContextMenu1 = New System.Windows.Forms.ContextMenu
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.Menu_lbl_usuario = New System.Windows.Forms.Label
-        Me.Menu_lbl_hora = New System.Windows.Forms.Label
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.homa_LogOut = New System.Windows.Forms.Button
         Me.TabPage6 = New System.Windows.Forms.TabPage
-        Me.detalleTicket_descripcion = New System.Windows.Forms.Label
-        Me.detalleTicket_matricula = New System.Windows.Forms.Label
-        Me.detalleTicket_fecha = New System.Windows.Forms.Label
-        Me.TabPage7 = New System.Windows.Forms.TabPage
-        Me.detalleTicket_btn_Terminar = New System.Windows.Forms.Button
         Me.detalleTicket_btn_multa = New System.Windows.Forms.Button
+        Me.detalleTicket_btn_Terminar = New System.Windows.Forms.Button
+        Me.detalleTicket_fecha = New System.Windows.Forms.Label
+        Me.detalleTicket_matricula = New System.Windows.Forms.Label
+        Me.detalleTicket_descripcion = New System.Windows.Forms.Label
+        Me.TabPage7 = New System.Windows.Forms.TabPage
         Me.detalleMulta_btn_Cancelar_Multa = New System.Windows.Forms.Button
         Me.detalleMulta_fecha = New System.Windows.Forms.Label
         Me.detalleMulta_matricula = New System.Windows.Forms.Label
         Me.detalleMulta_descripcion = New System.Windows.Forms.Label
         Me.TabPage8 = New System.Windows.Forms.TabPage
+        Me.cMulta_lbl_IC = New System.Windows.Forms.Label
         Me.cMulta_lbl_devuelto = New System.Windows.Forms.Label
         Me.cMulta_btn_devuelto = New System.Windows.Forms.Button
         Me.cMulta_lbl_entregado = New System.Windows.Forms.Label
         Me.cMulta_btn_entregado = New System.Windows.Forms.Button
-        Me.cMulta_lbl_IC = New System.Windows.Forms.Label
+        Me.butAdelante = New System.Windows.Forms.Button
+        Me.butGuardar = New System.Windows.Forms.Button
+        Me.butAtras = New System.Windows.Forms.Button
+        Me.ContextMenu1 = New System.Windows.Forms.ContextMenu
+        Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Menu_lbl_usuario = New System.Windows.Forms.Label
+        Me.Menu_lbl_hora = New System.Windows.Forms.Label
+        Me.Button4 = New System.Windows.Forms.Button
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.TabPage8.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -164,8 +164,17 @@ Partial Public Class Inicio
         Me.TabPage2.Controls.Add(Me.Home_nTicket)
         Me.TabPage2.Location = New System.Drawing.Point(0, 0)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(232, 242)
+        Me.TabPage2.Size = New System.Drawing.Size(240, 245)
         Me.TabPage2.Text = "2_Home"
+        '
+        'homa_LogOut
+        '
+        Me.homa_LogOut.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.homa_LogOut.Location = New System.Drawing.Point(154, 153)
+        Me.homa_LogOut.Name = "homa_LogOut"
+        Me.homa_LogOut.Size = New System.Drawing.Size(83, 30)
+        Me.homa_LogOut.TabIndex = 11
+        Me.homa_LogOut.Text = "Log out"
         '
         'Home_mMultas
         '
@@ -202,7 +211,7 @@ Partial Public Class Inicio
         Me.TabPage3.Controls.Add(Me.nTicket1_btn_tiempo)
         Me.TabPage3.Location = New System.Drawing.Point(0, 0)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(232, 242)
+        Me.TabPage3.Size = New System.Drawing.Size(240, 245)
         Me.TabPage3.Text = "3_nTicket1"
         '
         'nTicket1_lbl_coste
@@ -290,7 +299,7 @@ Partial Public Class Inicio
         Me.TabPage5.Controls.Add(Me.nTicket3_btn_plaza)
         Me.TabPage5.Location = New System.Drawing.Point(0, 0)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(240, 245)
+        Me.TabPage5.Size = New System.Drawing.Size(232, 242)
         Me.TabPage5.Text = "5_nTicket3"
         '
         'nTicket3_lbl_desc
@@ -341,77 +350,6 @@ Partial Public Class Inicio
         Me.nTicket3_btn_plaza.Size = New System.Drawing.Size(233, 40)
         Me.nTicket3_btn_plaza.TabIndex = 17
         '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(160, 204)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(80, 40)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = ">>"
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Silver
-        Me.Button2.Location = New System.Drawing.Point(80, 204)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(80, 40)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "GUARDAR"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(0, 204)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 40)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "<<"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Menu_lbl_usuario)
-        Me.Panel1.Controls.Add(Me.Menu_lbl_hora)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(240, 40)
-        '
-        'Menu_lbl_usuario
-        '
-        Me.Menu_lbl_usuario.Location = New System.Drawing.Point(51, 4)
-        Me.Menu_lbl_usuario.Name = "Menu_lbl_usuario"
-        Me.Menu_lbl_usuario.Size = New System.Drawing.Size(97, 33)
-        Me.Menu_lbl_usuario.Text = "USUARIO"
-        Me.Menu_lbl_usuario.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Menu_lbl_hora
-        '
-        Me.Menu_lbl_hora.Location = New System.Drawing.Point(8, 4)
-        Me.Menu_lbl_hora.Name = "Menu_lbl_hora"
-        Me.Menu_lbl_hora.Size = New System.Drawing.Size(37, 33)
-        Me.Menu_lbl_hora.Text = "HORA"
-        Me.Menu_lbl_hora.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.Red
-        Me.Button4.Location = New System.Drawing.Point(154, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(83, 34)
-        Me.Button4.TabIndex = 0
-        Me.Button4.Text = "CONFLICTO"
-        '
-        'homa_LogOut
-        '
-        Me.homa_LogOut.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.homa_LogOut.Location = New System.Drawing.Point(154, 153)
-        Me.homa_LogOut.Name = "homa_LogOut"
-        Me.homa_LogOut.Size = New System.Drawing.Size(83, 30)
-        Me.homa_LogOut.TabIndex = 11
-        Me.homa_LogOut.Text = "Log out"
-        '
         'TabPage6
         '
         Me.TabPage6.Controls.Add(Me.detalleTicket_btn_multa)
@@ -421,15 +359,33 @@ Partial Public Class Inicio
         Me.TabPage6.Controls.Add(Me.detalleTicket_descripcion)
         Me.TabPage6.Location = New System.Drawing.Point(0, 0)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(240, 245)
+        Me.TabPage6.Size = New System.Drawing.Size(232, 242)
         Me.TabPage6.Text = "6_detalleTicket"
         '
-        'detalleTicket_descripcion
+        'detalleTicket_btn_multa
         '
-        Me.detalleTicket_descripcion.Location = New System.Drawing.Point(7, 43)
-        Me.detalleTicket_descripcion.Name = "detalleTicket_descripcion"
-        Me.detalleTicket_descripcion.Size = New System.Drawing.Size(225, 20)
-        Me.detalleTicket_descripcion.Text = "Descripcion"
+        Me.detalleTicket_btn_multa.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.detalleTicket_btn_multa.Location = New System.Drawing.Point(7, 153)
+        Me.detalleTicket_btn_multa.Name = "detalleTicket_btn_multa"
+        Me.detalleTicket_btn_multa.Size = New System.Drawing.Size(225, 40)
+        Me.detalleTicket_btn_multa.TabIndex = 6
+        Me.detalleTicket_btn_multa.Text = "MULTA"
+        '
+        'detalleTicket_btn_Terminar
+        '
+        Me.detalleTicket_btn_Terminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.detalleTicket_btn_Terminar.Location = New System.Drawing.Point(7, 107)
+        Me.detalleTicket_btn_Terminar.Name = "detalleTicket_btn_Terminar"
+        Me.detalleTicket_btn_Terminar.Size = New System.Drawing.Size(225, 40)
+        Me.detalleTicket_btn_Terminar.TabIndex = 5
+        Me.detalleTicket_btn_Terminar.Text = "TERMINAR"
+        '
+        'detalleTicket_fecha
+        '
+        Me.detalleTicket_fecha.Location = New System.Drawing.Point(7, 83)
+        Me.detalleTicket_fecha.Name = "detalleTicket_fecha"
+        Me.detalleTicket_fecha.Size = New System.Drawing.Size(225, 20)
+        Me.detalleTicket_fecha.Text = "Fecha"
         '
         'detalleTicket_matricula
         '
@@ -438,12 +394,12 @@ Partial Public Class Inicio
         Me.detalleTicket_matricula.Size = New System.Drawing.Size(225, 20)
         Me.detalleTicket_matricula.Text = "Matricula"
         '
-        'detalleTicket_fecha
+        'detalleTicket_descripcion
         '
-        Me.detalleTicket_fecha.Location = New System.Drawing.Point(7, 83)
-        Me.detalleTicket_fecha.Name = "detalleTicket_fecha"
-        Me.detalleTicket_fecha.Size = New System.Drawing.Size(225, 20)
-        Me.detalleTicket_fecha.Text = "Fecha"
+        Me.detalleTicket_descripcion.Location = New System.Drawing.Point(7, 43)
+        Me.detalleTicket_descripcion.Name = "detalleTicket_descripcion"
+        Me.detalleTicket_descripcion.Size = New System.Drawing.Size(225, 20)
+        Me.detalleTicket_descripcion.Text = "Descripcion"
         '
         'TabPage7
         '
@@ -455,24 +411,6 @@ Partial Public Class Inicio
         Me.TabPage7.Name = "TabPage7"
         Me.TabPage7.Size = New System.Drawing.Size(232, 242)
         Me.TabPage7.Text = "7_detalleMulta"
-        '
-        'detalleTicket_btn_Terminar
-        '
-        Me.detalleTicket_btn_Terminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.detalleTicket_btn_Terminar.Location = New System.Drawing.Point(7, 107)
-        Me.detalleTicket_btn_Terminar.Name = "detalleTicket_btn_Terminar"
-        Me.detalleTicket_btn_Terminar.Size = New System.Drawing.Size(225, 40)
-        Me.detalleTicket_btn_Terminar.TabIndex = 5
-        Me.detalleTicket_btn_Terminar.Text = "TERMINAR"
-        '
-        'detalleTicket_btn_multa
-        '
-        Me.detalleTicket_btn_multa.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.detalleTicket_btn_multa.Location = New System.Drawing.Point(7, 153)
-        Me.detalleTicket_btn_multa.Name = "detalleTicket_btn_multa"
-        Me.detalleTicket_btn_multa.Size = New System.Drawing.Size(225, 40)
-        Me.detalleTicket_btn_multa.TabIndex = 6
-        Me.detalleTicket_btn_multa.Text = "MULTA"
         '
         'detalleMulta_btn_Cancelar_Multa
         '
@@ -513,8 +451,15 @@ Partial Public Class Inicio
         Me.TabPage8.Controls.Add(Me.cMulta_btn_entregado)
         Me.TabPage8.Location = New System.Drawing.Point(0, 0)
         Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Size = New System.Drawing.Size(240, 245)
+        Me.TabPage8.Size = New System.Drawing.Size(232, 242)
         Me.TabPage8.Text = "8_cMulta"
+        '
+        'cMulta_lbl_IC
+        '
+        Me.cMulta_lbl_IC.Location = New System.Drawing.Point(4, 43)
+        Me.cMulta_lbl_IC.Name = "cMulta_lbl_IC"
+        Me.cMulta_lbl_IC.Size = New System.Drawing.Size(233, 25)
+        Me.cMulta_lbl_IC.Text = "Impuesto de Cancelación:"
         '
         'cMulta_lbl_devuelto
         '
@@ -548,12 +493,67 @@ Partial Public Class Inicio
         Me.cMulta_btn_entregado.Size = New System.Drawing.Size(233, 49)
         Me.cMulta_btn_entregado.TabIndex = 17
         '
-        'cMulta_lbl_IC
+        'butAdelante
         '
-        Me.cMulta_lbl_IC.Location = New System.Drawing.Point(4, 43)
-        Me.cMulta_lbl_IC.Name = "cMulta_lbl_IC"
-        Me.cMulta_lbl_IC.Size = New System.Drawing.Size(233, 25)
-        Me.cMulta_lbl_IC.Text = "Impuesto de Cancelación:"
+        Me.butAdelante.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.butAdelante.Location = New System.Drawing.Point(160, 204)
+        Me.butAdelante.Name = "butAdelante"
+        Me.butAdelante.Size = New System.Drawing.Size(80, 40)
+        Me.butAdelante.TabIndex = 5
+        Me.butAdelante.Text = ">>"
+        '
+        'butGuardar
+        '
+        Me.butGuardar.BackColor = System.Drawing.Color.Silver
+        Me.butGuardar.Location = New System.Drawing.Point(80, 204)
+        Me.butGuardar.Name = "butGuardar"
+        Me.butGuardar.Size = New System.Drawing.Size(80, 40)
+        Me.butGuardar.TabIndex = 4
+        Me.butGuardar.Text = "GUARDAR"
+        '
+        'butAtras
+        '
+        Me.butAtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.butAtras.Location = New System.Drawing.Point(0, 204)
+        Me.butAtras.Name = "butAtras"
+        Me.butAtras.Size = New System.Drawing.Size(80, 40)
+        Me.butAtras.TabIndex = 3
+        Me.butAtras.Text = "<<"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Menu_lbl_usuario)
+        Me.Panel1.Controls.Add(Me.Menu_lbl_hora)
+        Me.Panel1.Controls.Add(Me.Button4)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(240, 40)
+        '
+        'Menu_lbl_usuario
+        '
+        Me.Menu_lbl_usuario.Location = New System.Drawing.Point(51, 4)
+        Me.Menu_lbl_usuario.Name = "Menu_lbl_usuario"
+        Me.Menu_lbl_usuario.Size = New System.Drawing.Size(97, 33)
+        Me.Menu_lbl_usuario.Text = "USUARIO"
+        Me.Menu_lbl_usuario.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Menu_lbl_hora
+        '
+        Me.Menu_lbl_hora.Location = New System.Drawing.Point(8, 4)
+        Me.Menu_lbl_hora.Name = "Menu_lbl_hora"
+        Me.Menu_lbl_hora.Size = New System.Drawing.Size(37, 33)
+        Me.Menu_lbl_hora.Text = "HORA"
+        Me.Menu_lbl_hora.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Red
+        Me.Button4.Location = New System.Drawing.Point(154, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(83, 34)
+        Me.Button4.TabIndex = 0
+        Me.Button4.Text = "CONFLICTO"
         '
         'Inicio
         '
@@ -562,9 +562,9 @@ Partial Public Class Inicio
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(240, 268)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.butAdelante)
+        Me.Controls.Add(Me.butGuardar)
+        Me.Controls.Add(Me.butAtras)
         Me.Controls.Add(Me.TabControl1)
         Me.KeyPreview = True
         Me.Menu = Me.mainMenu1
@@ -576,19 +576,19 @@ Partial Public Class Inicio
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
         Me.TabPage6.ResumeLayout(False)
         Me.TabPage7.ResumeLayout(False)
         Me.TabPage8.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents butAdelante As System.Windows.Forms.Button
+    Friend WithEvents butGuardar As System.Windows.Forms.Button
+    Friend WithEvents butAtras As System.Windows.Forms.Button
     Friend WithEvents Login_lbl_usuario As System.Windows.Forms.Label
     Friend WithEvents Login_lbl_pass As System.Windows.Forms.Label
     Friend WithEvents ContextMenu1 As System.Windows.Forms.ContextMenu
